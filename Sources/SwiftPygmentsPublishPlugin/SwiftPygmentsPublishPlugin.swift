@@ -25,7 +25,7 @@ public extension Modifier {
             
             if !markdown.hasPrefix("\n"),
                 let language = markdown.split(separator: "\n").first,
-                let aLexer = Pygments.Lexer.named(String(language)) {
+                let aLexer = Pygments.Lexer.named(String(language).trimmingCharacters(in: .whitespacesAndNewlines)) {
                 // Found language matching. Override default lexer.
                 lexer = aLexer
             }
