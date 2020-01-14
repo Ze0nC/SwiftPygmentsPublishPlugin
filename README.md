@@ -40,7 +40,7 @@ let package = Package(
 
 ## Usage:
 
-```
+```swift
 import SwiftPygmentsPublishPlugin
 ...
 try DeliciousRecipes().publish(using: [
@@ -48,6 +48,9 @@ try DeliciousRecipes().publish(using: [
     ...
 ])
 ```
+
+If the code block isn't marked with any language, it will be treated as swift. 
+
 
 ## Acknowledgement
 
