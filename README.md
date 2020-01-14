@@ -1,6 +1,6 @@
 # SwiftPygments Plugin for Publish
 
-A Pygments plugin for Publish to highlight code. 
+A Pygments plugin for [Publish](https://github.com/johnsundell/publish) to highlight code. 
 
 ## Requirements
 
@@ -51,7 +51,7 @@ try DeliciousRecipes().publish(using: [
 
 ## Acknowledgement
 
-Thanks to John Sundell (@johnsundell) for creating Publish and SplashPublishPlugin
+Thanks to John Sundell (@johnsundell) for creating [Publish](https://github.com/johnsundell/publish) and SplashPublishPlugin
 
 ## License
 MIT License
