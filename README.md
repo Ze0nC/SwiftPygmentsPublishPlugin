@@ -8,6 +8,7 @@ A Pygments plugin for Publish to highlight code.
 - Pygments: [https://pygments.org](https://pygments.org)
 - SwiftPygments: [https://github.com/Ze0nC/SwiftPygments](https://github.com/Ze0nC/SwiftPygments)
 - Swift 5
+- Pygments color scheme in your .css file
 
 SwiftPygments uses `PythonKit` to interact with Pygments.
 
