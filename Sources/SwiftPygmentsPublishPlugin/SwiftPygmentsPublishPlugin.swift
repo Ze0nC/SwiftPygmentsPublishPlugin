@@ -34,7 +34,9 @@ public extension Modifier {
                 .dropFirst()
                 .dropLast("\n```".count)
 
-            let highlighted = Pygments.html(String(markdown), use: lexer)
+            var highlighted = Pygments.html(String(markdown), use: lexer)
+            highlighted = highlighted.replacingOccurrences(of: "<pre>", with: "")
+            highlighted = highlighted.replacingOccurrences(of: "</pre>", with: "")
             return "<pre><code>" + highlighted + "\n</code></pre>"
         }
     }
