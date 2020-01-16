@@ -13,7 +13,7 @@ A Pygments plugin for [Publish](https://github.com/johnsundell/publish) to highl
 
 SwiftPygments uses `PythonKit` to interact with Pygments.
 
-## How to 
+## Installation
 1. Install `Python` if you don't have it on your system.
 2. Install `Pygments` if you don't have it on your system. 
 ``` zsh
@@ -40,7 +40,9 @@ let package = Package(
 )
 ```
 
-4. Add `.pygments()` to your build pipeline.
+## Usage
+
+1. Add `.pygments()` to your build pipeline.
 ```swift
 import SwiftPygmentsPublishPlugin
 ...
@@ -51,10 +53,10 @@ try MyWebsite().publish(using: [
     ...
 ])
 ```
-5. Add a color scheme in your `css` file. 
+2. Add a pygments color scheme in your `css` file. You can find many on internet. 
 
+3. Write highlighted codes!
 
-## Usage
 Please replace ''' with ``` backticks in codeblocks.
 
 In your markdown file, specify language after ``` to get correct highlight. 
