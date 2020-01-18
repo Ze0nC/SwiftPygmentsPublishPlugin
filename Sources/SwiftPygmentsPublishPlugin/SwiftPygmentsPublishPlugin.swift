@@ -37,7 +37,8 @@ public extension Modifier {
             var highlighted = Pygments.html(String(markdown), use: lexer)
             highlighted = highlighted.replacingOccurrences(of: "<pre>", with: "")
             highlighted = highlighted.replacingOccurrences(of: "</pre>", with: "")
-            return "<pre><code>" + highlighted + "\n</code></pre>"
+            highlighted = highlighted.trimmingCharacters(in: .newlines)
+            return "<pre><code>" + highlighted + "</code></pre>"
         }
     }
 }
