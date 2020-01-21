@@ -57,32 +57,30 @@ try MyWebsite().publish(using: [
 
 3. Write highlighted codes!
 
-Please replace ''' with ``` backticks in codeblocks.
-
 In your markdown file, specify language after ``` to get correct highlight. 
-```markdown
-'''swift
+````markdown
+```swift
 let str = "This is Swift code."
 print(str)
-'''
 ```
+````
 
 Specify code as `python`
-```markdown
-'''python
+````markdown
+```python
 str = "This is also Swift code."
 print(str)
-'''
 ```
+````
 
 
 If no language is specified, `swift` syntax will be used as default. 
-```markdown
-'''
+````markdown
+```
 let str = "This is also Swift code."
 print(str)
-'''
 ```
+````
 
 
 
