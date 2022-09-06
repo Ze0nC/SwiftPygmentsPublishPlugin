@@ -1,10 +1,11 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "SwiftPygmentsPublishPlugin",
+    platforms: [.macOS(.v12)],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
@@ -22,7 +23,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "SwiftPygmentsPublishPlugin",
-            dependencies: ["SwiftPygments", "Publish"]),
+            dependencies: ["SwiftPygments", .product(name: "Publish", package: "publish")]),
         .testTarget(
             name: "SwiftPygmentsPublishPluginTests",
             dependencies: ["SwiftPygmentsPublishPlugin", "SwiftPygments"]),
